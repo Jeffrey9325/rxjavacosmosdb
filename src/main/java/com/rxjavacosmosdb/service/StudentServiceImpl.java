@@ -76,7 +76,6 @@ public class StudentServiceImpl implements IstudentsService {
 	          .doOnError(e -> System.out.println("Error delete"));
   }
 
-  //este codigo se borrara
 //  @Override
 //  public Single<Students> findbyId(final String idStudent) {
 //    return repository.findById(idStudent);
