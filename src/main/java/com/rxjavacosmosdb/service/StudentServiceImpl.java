@@ -55,15 +55,6 @@ public class StudentServiceImpl implements IstudentsService {
 
   @Override
   public Single<Students> modifyStudent(String id, final Students student) {
-//	    return repository.findbyId(id)
-//	    .flatMap(people -> {
-//	      people.setId(id);
-//	      people.setFullName(student.getFullName());
-//	      people.setGender(student.getGender());
-//	      people.setDateofBirth(student.getDateofBirth());
-//	      people.setTypeDocument(student.getTypeDocument());
-//	      people.setDocumentNumber(student.getDocumentNumber());
-//	      return repository.modifyStudent(people);
 	  return repository.findById(id).toSingle()
 	  .flatMap(people -> {
 	  people.setId(id);
